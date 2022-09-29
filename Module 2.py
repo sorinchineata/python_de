@@ -3,10 +3,10 @@ import random #import random module
 
 count=0 #number of dictionaries in list
 dictlist = [] #define the dictionary
-for i in range(random.randint(2,3)): #define the random number of dictionaries
-    size = random.randint(1,3)    #define the random dictionary size for every one of the dictionaries
+for i in range(random.randint(2,100)): #define the random number of dictionaries
+    size = random.randint(1,26)    #define the random dictionary size for every one of the dictionaries
     keys = random.sample(string.ascii_lowercase,size)  #define the random letters for every one of the dictionaries using the size defined above
-    values = (random.randint(0,3) for j in range(size)) #define the random numbers for every one of the dicitonaries using the size defined above with values between 0 and 100
+    values = (random.randint(0,100) for j in range(size)) #define the random numbers for every one of the dicitonaries using the size defined above with values between 0 and 100
     oneDict = dict(zip(keys,values))  #create the dictionary from the two sequences keys and values
     dictlist.append(oneDict)     #add the dictionary created above to the list of dictionaries
     count = count + 1
