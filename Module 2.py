@@ -24,10 +24,10 @@ for i in range(0, count):
         for key_1,value_1 in dict1.items():
             double = 0
             dictnum = i+1
-            for key_2,value_1 in dict2.items():
+            maxvalue = dict1[key_1]
+            for key_2,value_2 in dict2.items():
                 if key_1 == key_2 and dict1[key_1]!=dict2[key_2]:
                     double = 1
-                    maxvalue = dict1[key_1]
                     if maxvalue < dict2[key_2]:
                         maxvalue = dict2[key_2]
                         dictnum = j+1
