@@ -32,7 +32,13 @@ for i in range(0, count):
                         maxvalue = dict2[key_2]
                         dictnum = j+1
                     char = key_1 + "_" + str(dictnum)
-
+'''
+I tried to take the dictionaries in the list and to compare them to see if the key is multiple dictionaries
+At the the end of the comparison if it wasn't a double i would add to the final dictionary the key and the value as they are
+In case of a double i would modify the key to have the number of the dictionary in which it was found.
+The problem seems to be at the last dictionary which isn't merged to the final one and also with this solution, if it would be a double in the last one
+it would be taken as it is
+'''
 
             if double == 0:
                 onedict = {(key_1, dict1[key_1])}
@@ -42,9 +48,6 @@ for i in range(0, count):
             else:onedict = {(char,maxvalue)}
                 #print(onedict)
             finaldict.update(onedict)
-
-
-
 
 
 print (finaldict)
