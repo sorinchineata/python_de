@@ -13,7 +13,6 @@ def bubblesort(randlist): #define a function which will do the bubble sort
                 randlist[i]=randlist[j]
                 randlist[j] = x
     return
-
 bubblesort(randlist) #run the function earlier defined
 
 odd=0 #define the integer odd to keep the count for odd numbers
