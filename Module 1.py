@@ -4,6 +4,8 @@ for i in range(0,100):
     n=random.randint(0,100) #generate one random integer between 0 and 100 - for 100 times
     randlist.append(n) #add the random element to the list
 
+print ('Random list:')
+print(randlist)
 def bubblesort(randlist): #define a function which will do the bubble sort
     for i in range(0,98):
         for j in range(i, 99):
@@ -14,6 +16,9 @@ def bubblesort(randlist): #define a function which will do the bubble sort
                 randlist[j] = x
     return
 bubblesort(randlist) #run the function earlier defined
+
+print ('Sorted list:')
+print(randlist)
 
 odd=0 #define the integer odd to keep the count for odd numbers
 sumodd=0 #define the integer sumodd to keep the sum for odd numbers
@@ -28,7 +33,9 @@ for i in range(0,100):
         even = even+1
         sumeven = sumeven+randlist[i]
 
+print ('Average of the odd numbers:')
 print (sumodd/odd) #print the average for odd numbers
+print ('Average of the even numbers:')
 print (sumeven/even) #print the average for even numbers
 
 
