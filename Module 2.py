@@ -11,6 +11,7 @@ for i in range(random.randint(2,10)): #define the random number of dictionaries
     dictlist.append(oneDict)     #add the dictionary created above to the list of dictionaries
     count = count + 1 #will be used to keep track of the number of dictionaries in the list
 
+print('List of random generated dictionaries:')
 print(dictlist)
 #print(count)
 
@@ -46,4 +47,5 @@ for key, value in interdict.items(): #Taking every key in the intermediate dicti
     onedict = {(currkey, currvalue)} #creating the dictionary with the values updated above
     finaldict.update(onedict) #concatenate the dictionary created above to the final dictionary
 
+print('Final dictinary:')
 print (finaldict)
