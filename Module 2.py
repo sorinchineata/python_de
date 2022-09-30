@@ -14,7 +14,6 @@ for i in range(random.randint(2,10)): #define the random number of dictionaries
 print(dictlist)
 #print(count)
 
-
 currdict = {} #will be used in for in order to check the dictionaries one by one
 interdict = {} #will be an intermediate version of the union off all dictionaries
 doublesdict = {} #will be used to save all the double keys
@@ -46,6 +45,5 @@ for key, value in interdict.items(): #Taking every key in the intermediate dicti
 
     onedict = {(currkey, currvalue)} #creating the dictionary with the values updated above
     finaldict.update(onedict) #concatenate the dictionary created above to the final dictionary
-
 
 print (finaldict)
