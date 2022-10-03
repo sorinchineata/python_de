@@ -25,17 +25,23 @@ sumodd=0 #define the integer sumodd to keep the sum for odd numbers
 even=0 #define the integer even to keep the count for even numbers
 sumeven=0 #define the integer sumeven to keep the sum for even numbers
 
-for i in range(0,100):
-    if (randlist[i]%2) ==0: #if the number is divided by 2 we'll add one to the count of odd numbers and will add the number to sumodd
+for i in randlist:
+    if (i%2) ==0: #if the number is divided by 2 we'll add one to the count of odd numbers and will add the number to sumodd
         odd = odd+1
-        sumodd = sumodd+randlist[i]
+        sumodd = sumodd+i
     else:                   #else we'll ad one to the count of even numberss and will add the number to sumeven
         even = even+1
-        sumeven = sumeven+randlist[i]
+        sumeven = sumeven+i
 
 print ('Average of the odd numbers:')
-print (sumodd/odd) #print the average for odd numbers
+if odd != 0:
+    print (sumodd/odd) #print the average for odd numbers
+else:
+    print('We have 0 odd numbers')
 print ('Average of the even numbers:')
-print (sumeven/even) #print the average for even numbers
+if even != 0:
+    print (sumeven/even) #print the average for even numbers
+else:
+    print('We have 0 even numbers')
 
 
