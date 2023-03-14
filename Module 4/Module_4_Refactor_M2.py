@@ -33,10 +33,10 @@ def final_dictionary(dict):
     finaldict = {}
     for key, value in dict.items():
         if len(value[0]) > 1:
-            max_val = max(value[0])
-            key = key + '_' + str(value[1][value[0].index(max_val)])
-            finaldict[key] = max_val
-        elif len(value[0]) == 1:
+            maxvalue = max(value[0])
+            key = key + '_' + str(value[1][value[0].index(maxvalue)])
+            finaldict[key] = maxvalue
+        else: 
             finaldict[key] = value[0][0]
     return finaldict
 
